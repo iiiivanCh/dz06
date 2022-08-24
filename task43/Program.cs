@@ -8,7 +8,7 @@ void SolutionSystemOfEquations()
 {
   Console.Clear();
   double[] userArray = GetUserData();
-  if (validation(userArray) == false)
+  if (Validation(userArray) == false)
     return;
   double[] userIntersectionPoint = GetIntersectionPoint(userArray);
   Console.Clear();
@@ -48,7 +48,7 @@ double[] GetIntersectionPoint(double[] array)
   return result;
 }
 
-bool validation(double[] array)
+bool Validation(double[] array)
 {
   if (array[0] == array[2] && array[1] != array[2])
   {
