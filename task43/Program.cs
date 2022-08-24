@@ -50,16 +50,15 @@ double[] GetIntersectionPoint(double[] array)
 
 bool validation(double[] array)
 {
-  bool exit = true;
   if (array[0] == array[2] && array[1] != array[2])
   {
     Console.Write("Нет решения, прямые параллельны");
-    return exit = false;
+    return false;
   };
   if (array[0] == array[2] && array[1] == array[2])
   {
     Console.Write("Прямые совпадают");
-    return exit = false;
+    return false;
   };
-  return exit;
+  return true;
 }
